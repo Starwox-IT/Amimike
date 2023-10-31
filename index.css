@@ -1,0 +1,49 @@
+html *, html *::before, html *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+@font-face {
+    font-family: 'helvetica';
+    src: url('./Fonts/Helvetica\ Neue\ 67\ Medium\ Condensed.otf');
+    font-weight: 900;   
+}
+
+.construction-container{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.construction-wrapper{
+    width: 90%;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.construction-wrapper img{
+    max-width: 80%;
+}
+
+.construction-wrapper .construction-text{
+    font-family: 'construction-text', sans-serif;
+}
+
+.construction-wrapper .construction-text h1{
+    margin-bottom: 1em;
+}
+
+.construction-wrapper .construction-text .gold{
+    color: #F9A543;
+}
+
+@media screen and (max-width: 514px){
+    .construction-wrapper .construction-text h1{
+        font-size: 1.5rem;
+    }
+}
